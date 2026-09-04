@@ -48,5 +48,6 @@ def kmeans_label(reduced_df: pd.DataFrame, df:pd.DataFrame):
     labels = kmeans.fit_predict(reduced_df.copy())
 
     df['kmeans_labels'] = labels
+    df.loc[df['kmeans_labels'] == 6, 'kmeans_labels'] = 0
     return df
 
