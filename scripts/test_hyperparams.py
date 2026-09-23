@@ -7,7 +7,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
 
-
 def train_models(X_train: pd.DataFrame, y_train: pd.Series) -> pd.DataFrame:
     """
     Train several classification models on the training data and return a
